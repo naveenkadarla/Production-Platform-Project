@@ -28,3 +28,11 @@ output "private_subnet_ids" {
   value = aws_subnet.private[*].id
 
 }
+
+output "internet_gateway_id" {
+
+  description = "Internet Gateway ID"
+
+  value = aws_internet_gateway.this.id
+
+}
