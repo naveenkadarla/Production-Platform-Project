@@ -36,3 +36,19 @@ output "internet_gateway_id" {
   value = aws_internet_gateway.this.id
 
 }
+
+output "nat_gateway_id" {
+
+  description = "NAT Gateway ID"
+
+  value = aws_nat_gateway.this.id
+
+}
+
+output "nat_gateway_public_ip" {
+
+  description = "Elastic IP of NAT Gateway"
+
+  value = aws_eip.nat.public_ip
+
+}
