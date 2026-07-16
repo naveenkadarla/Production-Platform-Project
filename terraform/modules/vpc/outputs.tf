@@ -67,3 +67,15 @@ output "private_route_table_id" {
   value = aws_route_table.private.id
 
 }
+output "bastion_security_group_id" {
+  value = aws_security_group.bastion.id
+}
+
+output "eks_cluster_security_group_id" {
+  value = aws_security_group.eks_cluster.id
+}
+
+output "eks_nodes_security_group_id" {
+  value = aws_security_group.eks_nodes.id
+}
+
