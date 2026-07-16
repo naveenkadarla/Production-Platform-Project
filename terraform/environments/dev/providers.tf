@@ -1,12 +1,20 @@
 provider "aws" {
+
   region = var.aws_region
 
   default_tags {
+
     tags = {
-      Project     = "Production-Platform"
+
+      Project     = var.project_name
       Environment = var.environment
       ManagedBy   = "Terraform"
       Owner       = "Naveen"
+
+      Repository = "Production-Platform-Project"
+
     }
+
   }
+
 }
