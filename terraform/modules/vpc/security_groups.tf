@@ -17,7 +17,7 @@ resource "aws_security_group" "bastion" {
     protocol  = "tcp"
 
     cidr_blocks = [
-      "0.0.0.0/0"
+      var.admin_cidr
     ]
 
   }
